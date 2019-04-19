@@ -16,7 +16,7 @@ ctypes.windll.user32.MessageBoxW(0,
 #set a variable for sleep timer
 sleep = 8
 
-#Wait 10 seconds for user to open appropriate time
+#Wait 4 seconds for user to open appropriate time
 time.sleep(4)
 
 #Create a function to click run and then back button
@@ -24,7 +24,7 @@ def clickrun():
     #Move the mouse to run button and click
     pyautogui.moveTo(1010,1000, duration=1.25)
     pyautogui.click()
-    #Pause 3 seconds for run to start
+    #Pause sleep seconds for run to start
     time.sleep(sleep)
     #back button to experiments page
     pyautogui.moveTo(20,55, duration=1.25)
